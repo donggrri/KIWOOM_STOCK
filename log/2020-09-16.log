@@ -1,0 +1,1201 @@
+[2020-09-16 08:13:32,564] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:14:03,655] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 08:14:03,655] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 08:14:04,327] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:14:04,327] I kiwoom.py | Kiwoom-trdata_slot-0204 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 08:14:04,342] I kiwoom.py | Kiwoom-trdata_slot-0217 I DEBUG    > 예수금 : 337599
+[2020-09-16 08:14:04,420] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:14:04,420] I kiwoom.py | Kiwoom-trdata_slot-0204 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 08:14:04,420] I kiwoom.py | Kiwoom-trdata_slot-0232 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000024230 - 000000002.45
+[2020-09-16 08:14:04,420] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: -00000000.46 - 현재가: 000000009320
+[2020-09-16 08:14:04,420] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: -00000000.03 - 현재가: 000000006570
+[2020-09-16 08:14:04,420] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000005.09 - 현재가: 000000005200
+[2020-09-16 08:14:04,420] I kiwoom.py | Kiwoom-trdata_slot-0273 I DEBUG    > sPreNext : 
+[2020-09-16 08:14:04,577] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 08:14:04,577] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 08:14:04,577] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 08:14:04,577] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:14:04,577] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 08:14:04,577] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:14:04,780] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 08:14:04,780] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:14:04,795] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 08:14:04,795] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:14:04,795] I kiwoom.py | Kiwoom-decide_buy_or_not-0291 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:14:04,795] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:14:04,795] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:14:04,795] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:14:04,795] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:14:04,795] I kiwoom.py | Kiwoom-decide_buy_or_not-0296 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:14:04,795] I kiwoom.py | Kiwoom-decide_buy_or_not-0297 I DEBUG    > []
+[2020-09-16 08:14:15,422] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:14:20,303] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 08:14:20,303] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 08:14:20,819] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:14:20,819] I kiwoom.py | Kiwoom-trdata_slot-0204 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 08:14:20,819] I kiwoom.py | Kiwoom-trdata_slot-0217 I DEBUG    > 예수금 : 337599
+[2020-09-16 08:14:20,912] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:14:20,912] I kiwoom.py | Kiwoom-trdata_slot-0204 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 08:14:20,912] I kiwoom.py | Kiwoom-trdata_slot-0232 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000024230 - 000000002.45
+[2020-09-16 08:14:20,912] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: -00000000.46 - 현재가: 000000009320
+[2020-09-16 08:14:20,912] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: -00000000.03 - 현재가: 000000006570
+[2020-09-16 08:14:20,912] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000005.09 - 현재가: 000000005200
+[2020-09-16 08:14:20,912] I kiwoom.py | Kiwoom-trdata_slot-0273 I DEBUG    > sPreNext : 
+[2020-09-16 08:14:21,043] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 08:14:21,043] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 08:14:21,043] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 08:14:21,043] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:14:21,043] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 08:14:21,043] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:14:21,121] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 08:14:21,121] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:14:21,137] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 08:14:21,137] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:14:21,137] I kiwoom.py | Kiwoom-decide_buy_or_not-0291 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:14:21,137] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:14:21,137] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:14:21,137] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:14:21,137] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:14:21,137] I kiwoom.py | Kiwoom-decide_buy_or_not-0296 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:14:21,137] I kiwoom.py | Kiwoom-decide_buy_or_not-0297 I DEBUG    > []
+[2020-09-16 08:15:32,578] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:15:37,690] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 08:15:37,690] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 08:15:38,268] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:15:38,268] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 08:15:38,268] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 337599
+[2020-09-16 08:15:38,362] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:15:38,362] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 08:15:38,362] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000024230 - 000000002.45
+[2020-09-16 08:15:38,362] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: -00000000.46 - 현재가: 000000009320
+[2020-09-16 08:15:38,362] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: -00000000.03 - 현재가: 000000006570
+[2020-09-16 08:15:38,362] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000005.09 - 현재가: 000000005200
+[2020-09-16 08:15:38,362] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 08:15:38,487] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 08:15:38,487] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 08:15:38,487] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 08:15:38,487] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:15:38,487] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 08:15:38,487] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:15:38,549] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 08:15:38,549] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:15:38,565] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 08:15:38,565] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:17:32,596] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:17:36,973] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 08:17:36,973] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 08:17:37,552] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:17:37,552] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 08:17:37,552] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 337599
+[2020-09-16 08:17:37,651] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:17:37,651] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 08:17:37,651] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000024230 - 000000002.45
+[2020-09-16 08:17:37,651] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: -00000000.46 - 현재가: 000000009320
+[2020-09-16 08:17:37,651] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: -00000000.03 - 현재가: 000000006570
+[2020-09-16 08:17:37,651] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000005.09 - 현재가: 000000005200
+[2020-09-16 08:17:37,651] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 08:17:37,792] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 08:17:37,792] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 08:17:37,792] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 08:17:37,792] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:17:37,792] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 08:17:37,792] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:17:37,854] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 08:17:37,854] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:17:37,870] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 08:17:37,870] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:18:41,032] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:18:45,522] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 08:18:45,522] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 08:18:46,528] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:18:46,528] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 08:18:46,528] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 337599
+[2020-09-16 08:18:46,622] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:18:46,622] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 08:18:46,622] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000024230 - 000000002.45
+[2020-09-16 08:18:46,622] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: -00000000.46 - 현재가: 000000009320
+[2020-09-16 08:18:46,622] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: -00000000.03 - 현재가: 000000006570
+[2020-09-16 08:18:46,622] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000005.09 - 현재가: 000000005200
+[2020-09-16 08:18:46,622] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 08:18:46,747] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 08:18:46,747] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 08:18:46,747] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 08:18:46,747] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:18:46,747] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 08:18:46,747] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:18:46,794] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 08:18:46,794] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:18:46,794] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:18:46,794] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:18:46,794] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:18:46,794] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:18:46,794] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:18:46,794] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:18:46,794] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 08:19:22,420] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:19:27,761] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 08:19:27,761] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 08:19:28,282] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:19:28,282] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 08:19:28,282] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 337599
+[2020-09-16 08:19:28,376] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:19:28,376] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 08:19:28,376] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000024230 - 000000002.45
+[2020-09-16 08:19:28,376] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: -00000000.46 - 현재가: 000000009320
+[2020-09-16 08:19:28,376] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: -00000000.03 - 현재가: 000000006570
+[2020-09-16 08:19:28,376] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000005.09 - 현재가: 000000005200
+[2020-09-16 08:19:28,376] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 08:19:28,517] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 08:19:28,517] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 08:19:28,517] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 08:19:28,517] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:19:28,517] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 08:19:28,517] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:19:28,548] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 08:19:28,548] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:19:28,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:19:28,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:19:28,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:19:28,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:19:28,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:19:28,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:19:28,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 08:20:07,906] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:20:12,190] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 08:20:12,190] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 08:20:12,696] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:20:12,711] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 08:20:12,711] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 337599
+[2020-09-16 08:20:12,790] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:20:12,790] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 08:20:12,790] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000024230 - 000000002.45
+[2020-09-16 08:20:12,790] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: -00000000.46 - 현재가: 000000009320
+[2020-09-16 08:20:12,790] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: -00000000.03 - 현재가: 000000006570
+[2020-09-16 08:20:12,790] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000005.09 - 현재가: 000000005200
+[2020-09-16 08:20:12,790] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 08:20:12,930] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 08:20:12,930] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 08:20:12,930] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 08:20:12,930] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:20:12,930] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 08:20:12,930] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 08:20:12,977] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 구매 요청 하기 전에 돈이 남아있는지 확인됨..
+[2020-09-16 08:20:12,993] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 08:20:12,993] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:20:12,993] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:20:12,993] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:20:12,993] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:20:12,993] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:20:12,993] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:20:12,993] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:20:12,993] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 08:22:11,548] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:22:39,367] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:22:43,880] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 08:22:43,880] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 08:22:44,583] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:22:44,583] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 08:22:44,583] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 337599
+[2020-09-16 08:22:44,676] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:22:44,676] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 08:22:44,676] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000024230 - 000000002.45
+[2020-09-16 08:22:44,676] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: -00000000.46 - 현재가: 000000009320
+[2020-09-16 08:22:44,676] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: -00000000.03 - 현재가: 000000006570
+[2020-09-16 08:22:44,676] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000005.09 - 현재가: 000000005200
+[2020-09-16 08:22:44,676] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 08:22:44,807] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 08:22:44,807] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 08:22:44,807] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 08:22:44,807] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:22:44,807] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 08:22:44,807] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 08:22:44,870] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 구매 요청 하기 전에 돈이 남아있는지 확인됨..
+[2020-09-16 08:22:44,886] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 08:22:44,886] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:22:44,886] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:22:44,886] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:22:44,886] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:22:44,886] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:22:44,886] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:22:44,886] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:22:44,886] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 08:30:48,797] I kiwoom.py | Kiwoom-realdata_slot-0400 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 08:45:02,602] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 08:45:10,367] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 08:45:10,367] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 08:45:10,972] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:45:10,972] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 08:45:10,976] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 337599
+[2020-09-16 08:45:11,060] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 08:45:11,060] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 08:45:11,060] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000024230 - 000000002.45
+[2020-09-16 08:45:11,060] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: -00000000.46 - 현재가: 000000009320
+[2020-09-16 08:45:11,060] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: -00000000.03 - 현재가: 000000006570
+[2020-09-16 08:45:11,060] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000005.09 - 현재가: 000000005200
+[2020-09-16 08:45:11,060] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 08:45:11,179] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 08:45:11,183] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 08:45:11,183] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 08:45:11,183] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:45:11,183] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 08:45:11,183] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 08:45:11,229] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 구매 요청 하기 전에 돈이 남아있는지 확인됨..
+[2020-09-16 08:45:11,244] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 08:45:11,244] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 08:45:11,244] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 08:45:11,244] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 08:45:11,244] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': -0.46, '현재가': 9320, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 08:45:11,244] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': -0.03, '현재가': 6570, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 08:45:11,244] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 5.09, '현재가': 5200, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 08:45:11,244] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 08:45:11,248] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 08:45:56,654] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:46:56,663] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:47:56,660] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:48:56,652] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:49:56,649] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:50:56,652] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:51:56,658] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:52:56,650] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:53:56,658] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:54:56,656] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:55:56,658] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:56:56,660] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:57:56,654] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:58:06,644] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:58:16,657] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:58:26,647] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:58:36,652] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:58:46,645] I kiwoom.py | Kiwoom-realdata_slot-0334 I DEBUG    > 장 시작 전
+[2020-09-16 08:58:56,755] I kiwoom.py | Kiwoom-realdata_slot-0337 I DEBUG    > 장 시작
+[2020-09-16 08:59:04,047] I kiwoom.py | Kiwoom-realdata_slot-0400 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:13:38,581] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 09:13:46,002] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 09:13:46,002] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 09:13:46,652] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 09:13:46,652] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 09:13:46,652] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 337599
+[2020-09-16 09:13:47,354] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 09:13:47,354] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 09:13:47,354] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000061118 - 000000006.18
+[2020-09-16 09:13:47,354] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: 000000001.14 - 현재가: 000000009470
+[2020-09-16 09:13:47,354] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: 000000003.48 - 현재가: 000000006800
+[2020-09-16 09:13:47,354] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000009.96 - 현재가: 000000005440
+[2020-09-16 09:13:47,354] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 09:13:47,508] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 09:13:47,512] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 09:13:47,512] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 09:13:47,512] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 09:13:47,512] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 09:13:47,512] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 09:13:47,594] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 005320;032580;042040;053050;065170;217620;253590;272210;, 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 09:13:47,594] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ ['005320', '032580', '042040', '053050', '065170', '217620', '253590', '272210']
+[2020-09-16 09:13:47,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 09:13:47,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 09:13:47,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 1.14, '현재가': 9470, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 09:13:47,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 3.48, '현재가': 6800, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 09:13:47,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 9.96, '현재가': 5440, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 09:13:47,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 09:13:47,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > ['005320', '032580', '042040', '053050', '065170', '217620', '253590', '272210']
+[2020-09-16 09:13:53,610] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 구매 요청 하기 전에 돈이 남아있는지 확인됨..
+[2020-09-16 09:13:53,610] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '국동', '스크린번호': '3000'}
+[2020-09-16 09:13:53,610] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 005320 종목의 가격을 알아내기
+[2020-09-16 09:13:53,610] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:13:53,614] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '피델릭스', '스크린번호': '3000'}
+[2020-09-16 09:13:53,614] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 032580 종목의 가격을 알아내기
+[2020-09-16 09:13:53,614] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:13:53,614] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '케이피엠테크', '스크린번호': '3000'}
+[2020-09-16 09:13:53,614] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 042040 종목의 가격을 알아내기
+[2020-09-16 09:13:53,614] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:13:53,618] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '지에스이', '스크린번호': '3000'}
+[2020-09-16 09:13:53,618] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 053050 종목의 가격을 알아내기
+[2020-09-16 09:13:53,618] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:13:53,618] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '넥스트BT', '스크린번호': '3000'}
+[2020-09-16 09:13:53,622] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 065170 종목의 가격을 알아내기
+[2020-09-16 09:13:53,622] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:13:53,622] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '디딤', '스크린번호': '3000'}
+[2020-09-16 09:13:53,622] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 217620 종목의 가격을 알아내기
+[2020-09-16 09:13:53,622] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:13:53,626] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '네오셈', '스크린번호': '3000'}
+[2020-09-16 09:13:53,626] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 253590 종목의 가격을 알아내기
+[2020-09-16 09:13:53,626] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:13:53,626] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '한화시스템', '스크린번호': '3000'}
+[2020-09-16 09:13:53,626] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 272210 종목의 가격을 알아내기
+[2020-09-16 09:13:53,626] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:13:53,630] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 09:13:53,630] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 09:13:53,630] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 09:13:53,630] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 09:13:53,630] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 1.14, '현재가': 9470, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 09:13:53,630] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 3.48, '현재가': 6800, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 09:13:53,634] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 9.96, '현재가': 5440, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 09:13:53,634] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 09:13:53,634] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 09:13:54,205] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:13:54,205] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:14:58,575] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 09:15:05,137] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 09:15:05,137] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 09:15:05,710] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 09:15:05,714] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 09:15:05,714] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 337599
+[2020-09-16 09:15:07,327] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 09:15:07,328] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 09:15:07,328] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000000988585 - 000000000054654 - 000000005.53
+[2020-09-16 09:15:07,328] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: 000000001.04 - 현재가: 000000009460
+[2020-09-16 09:15:07,328] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: 000000003.02 - 현재가: 000000006770
+[2020-09-16 09:15:07,328] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000102 - 매입가:000000000004902 - 수익률: 000000008.95 - 현재가: 000000005390
+[2020-09-16 09:15:07,328] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 09:15:07,474] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 09:15:07,478] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 09:15:07,478] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 09:15:07,478] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 09:15:07,478] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 09:15:07,478] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 09:15:07,536] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 005320;042040;053050;065170;217620;253590;272210;, 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 09:15:07,536] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ ['005320', '042040', '053050', '065170', '217620', '253590', '272210']
+[2020-09-16 09:15:07,536] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 09:15:07,536] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 09:15:07,536] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 1.04, '현재가': 9460, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 09:15:07,536] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 3.02, '현재가': 6770, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 09:15:07,536] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 8.95, '현재가': 5390, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 09:15:07,536] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 09:15:07,536] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > ['005320', '042040', '053050', '065170', '217620', '253590', '272210']
+[2020-09-16 09:15:13,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 구매 요청 하기 전에 돈이 남아있는지 확인됨..
+[2020-09-16 09:15:13,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '국동', '스크린번호': '3000'}
+[2020-09-16 09:15:13,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 005320 종목의 가격을 알아내기
+[2020-09-16 09:15:13,548] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:15:13,552] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '케이피엠테크', '스크린번호': '3000'}
+[2020-09-16 09:15:13,552] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 042040 종목의 가격을 알아내기
+[2020-09-16 09:15:13,552] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:15:13,552] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '지에스이', '스크린번호': '3000'}
+[2020-09-16 09:15:13,552] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 053050 종목의 가격을 알아내기
+[2020-09-16 09:15:13,552] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:15:13,556] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '넥스트BT', '스크린번호': '3000'}
+[2020-09-16 09:15:13,556] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 065170 종목의 가격을 알아내기
+[2020-09-16 09:15:13,556] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:15:13,556] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '디딤', '스크린번호': '3000'}
+[2020-09-16 09:15:13,556] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 217620 종목의 가격을 알아내기
+[2020-09-16 09:15:13,556] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:15:13,556] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '네오셈', '스크린번호': '3000'}
+[2020-09-16 09:15:13,556] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 253590 종목의 가격을 알아내기
+[2020-09-16 09:15:13,560] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:15:13,560] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 	{'종목명': '한화시스템', '스크린번호': '3000'}
+[2020-09-16 09:15:13,560] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 272210 종목의 가격을 알아내기
+[2020-09-16 09:15:13,560] I kiwoom.py | Kiwoom-decide_buy_or_not-0319 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 09:15:13,564] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: , 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 09:15:13,564] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ []
+[2020-09-16 09:15:13,564] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 09:15:13,564] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 09:15:13,564] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 1.04, '현재가': 9460, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 09:15:13,564] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 3.02, '현재가': 6770, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 09:15:13,564] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 102, '매입가': 4902, '수익률(%)': 8.95, '현재가': 5390, '매입금액': 500055, '매매가능수량': 102, '스크린번호': '3000'}
+[2020-09-16 09:15:13,564] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 09:15:13,564] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > []
+[2020-09-16 09:15:13,568] I kiwoom.py | Kiwoom-condition_real_slot-0193 I DEBUG    > 종목코드: 032580, 이벤트종류: I, 조건식이름: 단타1, 조건명인덱스: 0
+[2020-09-16 09:15:13,568] I kiwoom.py | Kiwoom-condition_real_slot-0196 I DEBUG    > 종목코드: 032580, 종목편입: I
+[2020-09-16 09:15:13,568] I kiwoom.py | Kiwoom-condition_real_slot-0193 I DEBUG    > 종목코드: 032580, 이벤트종류: D, 조건식이름: 단타1, 조건명인덱스: 0
+[2020-09-16 09:15:13,568] I kiwoom.py | Kiwoom-condition_real_slot-0199 I DEBUG    > 종목코드: 032580, 종목이탈: D
+[2020-09-16 09:15:14,107] I kiwoom.py | Kiwoom-condition_real_slot-0193 I DEBUG    > 종목코드: 032580, 이벤트종류: I, 조건식이름: 단타1, 조건명인덱스: 0
+[2020-09-16 09:15:14,107] I kiwoom.py | Kiwoom-condition_real_slot-0196 I DEBUG    > 종목코드: 032580, 종목편입: I
+[2020-09-16 09:15:14,107] I kiwoom.py | Kiwoom-condition_real_slot-0193 I DEBUG    > 종목코드: 032580, 이벤트종류: D, 조건식이름: 단타1, 조건명인덱스: 0
+[2020-09-16 09:15:14,107] I kiwoom.py | Kiwoom-condition_real_slot-0199 I DEBUG    > 종목코드: 032580, 종목이탈: D
+[2020-09-16 09:15:14,107] I kiwoom.py | Kiwoom-condition_real_slot-0193 I DEBUG    > 종목코드: 032580, 이벤트종류: I, 조건식이름: 단타1, 조건명인덱스: 0
+[2020-09-16 09:15:14,107] I kiwoom.py | Kiwoom-condition_real_slot-0196 I DEBUG    > 종목코드: 032580, 종목편입: I
+[2020-09-16 09:15:14,111] I kiwoom.py | Kiwoom-condition_real_slot-0193 I DEBUG    > 종목코드: 032580, 이벤트종류: D, 조건식이름: 단타1, 조건명인덱스: 0
+[2020-09-16 09:15:14,111] I kiwoom.py | Kiwoom-condition_real_slot-0199 I DEBUG    > 종목코드: 032580, 종목이탈: D
+[2020-09-16 09:15:14,111] I kiwoom.py | Kiwoom-condition_real_slot-0193 I DEBUG    > 종목코드: 032580, 이벤트종류: I, 조건식이름: 단타1, 조건명인덱스: 0
+[2020-09-16 09:15:14,111] I kiwoom.py | Kiwoom-condition_real_slot-0196 I DEBUG    > 종목코드: 032580, 종목편입: I
+[2020-09-16 09:15:14,111] I kiwoom.py | Kiwoom-condition_real_slot-0193 I DEBUG    > 종목코드: 032580, 이벤트종류: D, 조건식이름: 단타1, 조건명인덱스: 0
+[2020-09-16 09:15:14,111] I kiwoom.py | Kiwoom-condition_real_slot-0199 I DEBUG    > 종목코드: 032580, 종목이탈: D
+[2020-09-16 09:15:14,111] I kiwoom.py | Kiwoom-condition_real_slot-0193 I DEBUG    > 종목코드: 032580, 이벤트종류: I, 조건식이름: 단타1, 조건명인덱스: 0
+[2020-09-16 09:15:14,111] I kiwoom.py | Kiwoom-condition_real_slot-0196 I DEBUG    > 종목코드: 032580, 종목편입: I
+[2020-09-16 09:15:14,115] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:14,115] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:14,115] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:14,639] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:14,639] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:14,643] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:15,166] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:15,166] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:15:15,170] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:15,701] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:15,701] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:15,701] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:16,241] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:16,241] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:16,245] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:16,800] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:16,800] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:16,800] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:17,351] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:17,354] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:17,354] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:17,883] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:17,883] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:17,887] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:18,426] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:18,426] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:18,430] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:18,960] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:18,960] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:18,964] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:19,512] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:19,512] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:19,516] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:20,069] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390', '074610'])]
+[2020-09-16 09:15:20,069] I kiwoom.py | Kiwoom-realdata_slot-0414 I DEBUG    > 매도주문 전달 성공
+[2020-09-16 09:15:20,588] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:20,592] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:20,592] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:21,129] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:21,129] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:21,133] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:21,666] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:21,666] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:15:21,670] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:22,197] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:22,197] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:22,197] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:22,725] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:22,725] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:22,725] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:23,253] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:23,253] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:23,257] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:23,786] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:23,786] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 005320 
+[2020-09-16 09:15:23,790] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:24,341] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:24,341] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:24,341] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:24,885] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:24,885] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:24,889] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:25,460] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:25,462] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:25,462] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:25,984] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:25,984] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:25,988] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:26,533] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:26,533] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:26,537] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:27,083] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:27,083] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:27,083] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:27,618] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:27,618] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:27,622] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:28,178] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:28,178] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:28,180] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:28,727] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:28,727] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:28,727] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:29,280] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:29,283] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:29,283] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:29,812] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:29,815] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:29,815] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:30,364] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:30,364] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:30,364] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:30,916] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:30,918] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 074610 
+[2020-09-16 09:15:30,918] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:31,458] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:31,460] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:31,460] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:31,997] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:32,000] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:32,000] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:32,551] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:32,551] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:32,555] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:33,108] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:33,108] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:33,112] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:33,640] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:33,640] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:33,644] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:34,186] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:34,186] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 074610 
+[2020-09-16 09:15:34,190] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:34,728] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:34,731] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:34,733] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:35,290] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:35,294] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:35,294] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:35,806] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:35,808] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 074610 
+[2020-09-16 09:15:35,808] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:36,355] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:36,355] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 074610 
+[2020-09-16 09:15:36,359] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:36,902] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:36,905] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:36,905] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:37,442] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:37,442] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:37,448] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:37,993] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:37,993] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:37,997] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:38,549] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:38,551] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 074610 
+[2020-09-16 09:15:38,551] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:39,084] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:39,084] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:39,088] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:39,623] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:39,623] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:15:39,627] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:40,142] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 3000, 요청이름: 신규매수, tr코드: KOA_NORMAL_BUY_KQ_ORD --- [00Z112] 모의투자 정상처리 되었습니다
+[2020-09-16 09:15:40,146] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 신규매수, sTrCode: KOA_NORMAL_BUY_KQ_ORD
+[2020-09-16 09:15:40,146] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:40,146] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:40,146] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:40,691] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:40,691] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:40,695] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:41,230] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:41,230] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:41,230] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:41,751] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:41,751] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:41,755] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:42,303] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:42,303] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:42,307] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:42,852] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:42,852] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:42,856] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:43,410] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:43,414] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 217620 
+[2020-09-16 09:15:43,414] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:43,948] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:43,948] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:43,948] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:43,948] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:44,516] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:44,516] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:44,516] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:45,042] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:45,042] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:45,046] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:45,578] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:45,578] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:45,578] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:45,578] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:46,107] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:46,107] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:46,111] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:46,641] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:46,641] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:46,645] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:46,645] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:15:46,645] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:47,189] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:47,189] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:47,189] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:47,193] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:47,750] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:47,750] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:47,754] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:48,301] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:48,301] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:48,305] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:48,850] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:48,854] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:48,854] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:49,380] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:49,380] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:49,384] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:49,929] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:49,930] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:49,932] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:50,935] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:50,935] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:50,935] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:51,487] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:51,491] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:51,491] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:52,013] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:52,013] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:52,017] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:52,540] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:52,544] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:52,544] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:53,063] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:53,067] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:53,067] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:53,067] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:53,071] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:53,614] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:53,617] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:15:53,617] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:54,151] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:54,151] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:15:54,155] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:54,677] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:54,677] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:54,681] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:55,228] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:55,228] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:15:55,228] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:55,746] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:55,749] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:55,749] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:55,749] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:56,304] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:56,304] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 074610 
+[2020-09-16 09:15:56,307] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:56,840] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:56,840] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 074610 
+[2020-09-16 09:15:56,844] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:57,406] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:57,410] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:57,410] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:57,955] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:57,955] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:57,958] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:58,496] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:58,496] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:15:58,500] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:59,037] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:59,037] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:59,041] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:15:59,041] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:15:59,572] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:15:59,572] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:15:59,572] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:00,111] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:00,111] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:16:00,115] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:00,633] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:00,636] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 042040 
+[2020-09-16 09:16:00,636] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:01,176] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:01,176] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 253590 
+[2020-09-16 09:16:01,181] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:01,703] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:01,705] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:16:01,705] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:02,236] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:02,236] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:16:02,236] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:02,772] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:02,772] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:02,776] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:03,325] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:03,328] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:03,328] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:03,861] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 3000, 요청이름: 신규매수, tr코드: KOA_NORMAL_BUY_KQ_ORD --- [00Z112] 모의투자 정상처리 되었습니다
+[2020-09-16 09:16:03,861] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 신규매수, sTrCode: KOA_NORMAL_BUY_KQ_ORD
+[2020-09-16 09:16:03,865] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:03,865] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:03,868] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:04,441] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:04,441] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:04,441] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:16:04,441] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:04,979] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:04,979] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:04,982] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:05,511] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:05,511] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:16:05,515] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:06,051] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:06,051] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:16:06,055] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:06,613] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:06,613] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:06,613] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:07,150] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:07,150] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:07,150] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:07,154] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:07,154] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:07,677] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:07,679] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:16:07,681] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:08,207] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:08,211] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:08,211] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:16:08,211] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:08,790] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:08,790] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:16:08,790] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:09,334] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:09,338] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:09,338] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 005320 
+[2020-09-16 09:16:09,338] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:09,883] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:09,883] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:09,887] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:10,424] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:10,424] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:10,424] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:10,974] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:10,974] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 272210 
+[2020-09-16 09:16:10,974] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:11,527] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:11,527] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:11,527] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:16:11,528] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:12,052] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:12,055] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 065170 
+[2020-09-16 09:16:12,055] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:12,594] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:12,594] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:12,598] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 09:16:13,121] I kiwoom.py | Kiwoom-realdata_slot-0401 I DEBUG    > asd dict => [dict_keys(['025980', '045390'])]
+[2020-09-16 09:16:13,125] I kiwoom.py | Kiwoom-realdata_slot-0450 I DEBUG    > 매수조건 통과 053050 
+[2020-09-16 09:16:13,125] I kiwoom.py | Kiwoom-realdata_slot-0463 I DEBUG    > 매수주문 전달 성공
+[2020-09-16 22:00:28,726] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 22:00:42,229] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 22:00:42,229] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 22:00:42,938] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 22:00:42,938] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 22:00:42,938] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 1846802
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000005614905 - -00000000137528 - -00000002.45
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 005320 - 종목명: 국동                                     - 보유수량: 000000000000020 - 매입가:000000000004890 - 수익률: -00000009.89 - 현재가: 000000004450
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: 000000000.07 - 현재가: 000000009370
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 042040 - 종목명: 케이피엠테크                             - 보유수량: 000000000000437 - 매입가:000000000002098 - 수익률: 000000022.36 - 현재가: 000000002590
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: 000000001.04 - 현재가: 000000006640
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 053050 - 종목명: 지에스이                                 - 보유수량: 000000000000600 - 매입가:000000000001927 - 수익률: 000000000.75 - 현재가: 000000001960
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 065170 - 종목명: 넥스트BT                                 - 보유수량: 000000000000306 - 매입가:000000000002647 - 수익률: -00000007.78 - 현재가: 000000002465
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000063 - 매입가:000000000005374 - 수익률: -00000018.41 - 현재가: 000000004430
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 217620 - 종목명: 디딤                                     - 보유수량: 000000000000408 - 매입가:000000000002043 - 수익률: -00000012.28 - 현재가: 000000001810
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 253590 - 종목명: 네오셈                                   - 보유수량: 000000000000121 - 매입가:000000000004205 - 수익률: -00000012.17 - 현재가: 000000003730
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 272210 - 종목명: 한화시스템                               - 보유수량: 000000000000033 - 매입가:000000000014050 - 수익률: -00000011.56 - 현재가: 000000012550
+[2020-09-16 22:00:43,063] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 22:00:43,219] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 22:00:43,219] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 22:00:43,219] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 22:00:43,219] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:00:43,219] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 22:00:43,219] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 000540;008470;009460;038110;050860;053050;053300;060480;104040;123840;141070;200230;237690;261200;, 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ ['000540', '008470', '009460', '038110', '050860', '053050', '053300', '060480', '104040', '123840', '141070', '200230', '237690', '261200']
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '국동', '보유수량': 20, '매입가': 4890, '수익률(%)': -9.89, '현재가': 4450, '매입금액': 97800, '매매가능수량': 20, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 0.07, '현재가': 9370, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '케이피엠테크', '보유수량': 437, '매입가': 2098, '수익률(%)': 22.36, '현재가': 2590, '매입금액': 916900, '매매가능수량': 437, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 1.04, '현재가': 6640, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '지에스이', '보유수량': 600, '매입가': 1927, '수익률(%)': 0.75, '현재가': 1960, '매입금액': 1156650, '매매가능수량': 600, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '넥스트BT', '보유수량': 306, '매입가': 2647, '수익률(%)': -7.78, '현재가': 2465, '매입금액': 810170, '매매가능수량': 306, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 63, '매입가': 5374, '수익률(%)': -18.41, '현재가': 4430, '매입금액': 338580, '매매가능수량': 63, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '디딤', '보유수량': 408, '매입가': 2043, '수익률(%)': -12.28, '현재가': 1810, '매입금액': 833710, '매매가능수량': 408, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '네오셈', '보유수량': 121, '매입가': 4205, '수익률(%)': -12.17, '현재가': 3730, '매입금액': 508915, '매매가능수량': 121, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '한화시스템', '보유수량': 33, '매입가': 14050, '수익률(%)': -11.56, '현재가': 12550, '매입금액': 463650, '매매가능수량': 33, '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > ['000540', '008470', '009460', '038110', '050860', '053050', '053300', '060480', '104040', '123840', '141070', '200230', '237690', '261200']
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0309 I DEBUG    > 구매 요청 하기 전에 돈이 남아있는지 확인됨..
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '흥국화재', '스크린번호': '3000'}
+[2020-09-16 22:00:43,266] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 000540 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '부스타', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 008470 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '한창제지', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 009460 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '에코플라스틱', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 038110 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '아세아텍', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 050860 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '지에스이', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 053050 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '한국정보인증', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 053300 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '국일신동', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 060480 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '대성파인텍', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 104040 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '한일진공', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 123840 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '맥스로텍', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 141070 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '텔콘RF제약', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 200230 종목의 가격을 알아내기
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '에스티팜', '스크린번호': '3000'}
+[2020-09-16 22:00:43,282] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 237690 종목의 가격을 알아내기
+[2020-09-16 22:00:43,298] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,298] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '덴티스', '스크린번호': '3000'}
+[2020-09-16 22:00:43,298] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 261200 종목의 가격을 알아내기
+[2020-09-16 22:00:43,298] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 005110;007110;012280;025980;058400;065450;082800;214270;261200;, 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ ['005110', '007110', '012280', '025980', '058400', '065450', '082800', '214270', '261200']
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '국동', '보유수량': 20, '매입가': 4890, '수익률(%)': -9.89, '현재가': 4450, '매입금액': 97800, '매매가능수량': 20, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 0.07, '현재가': 9370, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '케이피엠테크', '보유수량': 437, '매입가': 2098, '수익률(%)': 22.36, '현재가': 2590, '매입금액': 916900, '매매가능수량': 437, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 1.04, '현재가': 6640, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '지에스이', '보유수량': 600, '매입가': 1927, '수익률(%)': 0.75, '현재가': 1960, '매입금액': 1156650, '매매가능수량': 600, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '넥스트BT', '보유수량': 306, '매입가': 2647, '수익률(%)': -7.78, '현재가': 2465, '매입금액': 810170, '매매가능수량': 306, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 63, '매입가': 5374, '수익률(%)': -18.41, '현재가': 4430, '매입금액': 338580, '매매가능수량': 63, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '디딤', '보유수량': 408, '매입가': 2043, '수익률(%)': -12.28, '현재가': 1810, '매입금액': 833710, '매매가능수량': 408, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '네오셈', '보유수량': 121, '매입가': 4205, '수익률(%)': -12.17, '현재가': 3730, '매입금액': 508915, '매매가능수량': 121, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '한화시스템', '보유수량': 33, '매입가': 14050, '수익률(%)': -11.56, '현재가': 12550, '매입금액': 463650, '매매가능수량': 33, '스크린번호': '3000'}
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 22:00:43,313] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > ['005110', '007110', '012280', '025980', '058400', '065450', '082800', '214270', '261200']
+[2020-09-16 22:08:19,011] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 22:08:23,469] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 22:08:23,470] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 22:08:24,060] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 22:08:24,061] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 22:08:24,061] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 1846802
+[2020-09-16 22:08:24,160] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 22:08:24,161] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 22:08:24,161] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000005614905 - -00000000137528 - -00000002.45
+[2020-09-16 22:08:24,161] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 005320 - 종목명: 국동                                     - 보유수량: 000000000000020 - 매입가:000000000004890 - 수익률: -00000009.89 - 현재가: 000000004450
+[2020-09-16 22:08:24,161] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: 000000000.07 - 현재가: 000000009370
+[2020-09-16 22:08:24,162] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 042040 - 종목명: 케이피엠테크                             - 보유수량: 000000000000437 - 매입가:000000000002098 - 수익률: 000000022.36 - 현재가: 000000002590
+[2020-09-16 22:08:24,162] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: 000000001.04 - 현재가: 000000006640
+[2020-09-16 22:08:24,162] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 053050 - 종목명: 지에스이                                 - 보유수량: 000000000000600 - 매입가:000000000001927 - 수익률: 000000000.75 - 현재가: 000000001960
+[2020-09-16 22:08:24,162] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 065170 - 종목명: 넥스트BT                                 - 보유수량: 000000000000306 - 매입가:000000000002647 - 수익률: -00000007.78 - 현재가: 000000002465
+[2020-09-16 22:08:24,163] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000063 - 매입가:000000000005374 - 수익률: -00000018.41 - 현재가: 000000004430
+[2020-09-16 22:08:24,163] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 217620 - 종목명: 디딤                                     - 보유수량: 000000000000408 - 매입가:000000000002043 - 수익률: -00000012.28 - 현재가: 000000001810
+[2020-09-16 22:08:24,163] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 253590 - 종목명: 네오셈                                   - 보유수량: 000000000000121 - 매입가:000000000004205 - 수익률: -00000012.17 - 현재가: 000000003730
+[2020-09-16 22:08:24,164] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 272210 - 종목명: 한화시스템                               - 보유수량: 000000000000033 - 매입가:000000000014050 - 수익률: -00000011.56 - 현재가: 000000012550
+[2020-09-16 22:08:24,164] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 22:08:24,300] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 22:08:24,301] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;
+[2020-09-16 22:08:24,301] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 22:08:24,302] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:08:24,302] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 22:08:24,302] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:08:24,382] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 000540;008470;009460;038110;050860;053050;053300;060480;104040;123840;141070;200230;237690;261200;, 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 22:08:24,382] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ ['000540', '008470', '009460', '038110', '050860', '053050', '053300', '060480', '104040', '123840', '141070', '200230', '237690', '261200']
+[2020-09-16 22:08:24,382] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 22:08:24,382] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 22:08:24,382] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '국동', '보유수량': 20, '매입가': 4890, '수익률(%)': -9.89, '현재가': 4450, '매입금액': 97800, '매매가능수량': 20, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 0.07, '현재가': 9370, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '케이피엠테크', '보유수량': 437, '매입가': 2098, '수익률(%)': 22.36, '현재가': 2590, '매입금액': 916900, '매매가능수량': 437, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 1.04, '현재가': 6640, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '지에스이', '보유수량': 600, '매입가': 1927, '수익률(%)': 0.75, '현재가': 1960, '매입금액': 1156650, '매매가능수량': 600, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '넥스트BT', '보유수량': 306, '매입가': 2647, '수익률(%)': -7.78, '현재가': 2465, '매입금액': 810170, '매매가능수량': 306, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 63, '매입가': 5374, '수익률(%)': -18.41, '현재가': 4430, '매입금액': 338580, '매매가능수량': 63, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '디딤', '보유수량': 408, '매입가': 2043, '수익률(%)': -12.28, '현재가': 1810, '매입금액': 833710, '매매가능수량': 408, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '네오셈', '보유수량': 121, '매입가': 4205, '수익률(%)': -12.17, '현재가': 3730, '매입금액': 508915, '매매가능수량': 121, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '한화시스템', '보유수량': 33, '매입가': 14050, '수익률(%)': -11.56, '현재가': 12550, '매입금액': 463650, '매매가능수량': 33, '스크린번호': '3000'}
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 22:08:24,383] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > ['000540', '008470', '009460', '038110', '050860', '053050', '053300', '060480', '104040', '123840', '141070', '200230', '237690', '261200']
+[2020-09-16 22:08:24,384] I kiwoom.py | Kiwoom-decide_buy_or_not-0309 I DEBUG    > 구매 요청 하기 전에 돈이 남아있는지 확인됨..
+[2020-09-16 22:08:24,384] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '흥국화재', '스크린번호': '3000'}
+[2020-09-16 22:08:24,384] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 000540 종목의 가격을 알아내기
+[2020-09-16 22:08:24,398] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,400] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '부스타', '스크린번호': '3000'}
+[2020-09-16 22:08:24,400] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 008470 종목의 가격을 알아내기
+[2020-09-16 22:08:24,400] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,401] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '한창제지', '스크린번호': '3000'}
+[2020-09-16 22:08:24,401] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 009460 종목의 가격을 알아내기
+[2020-09-16 22:08:24,401] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,402] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '에코플라스틱', '스크린번호': '3000'}
+[2020-09-16 22:08:24,402] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 038110 종목의 가격을 알아내기
+[2020-09-16 22:08:24,402] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,404] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '아세아텍', '스크린번호': '3000'}
+[2020-09-16 22:08:24,404] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 050860 종목의 가격을 알아내기
+[2020-09-16 22:08:24,404] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,405] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '지에스이', '스크린번호': '3000'}
+[2020-09-16 22:08:24,405] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 053050 종목의 가격을 알아내기
+[2020-09-16 22:08:24,405] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '한국정보인증', '스크린번호': '3000'}
+[2020-09-16 22:08:24,405] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 053300 종목의 가격을 알아내기
+[2020-09-16 22:08:24,405] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,407] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '국일신동', '스크린번호': '3000'}
+[2020-09-16 22:08:24,407] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 060480 종목의 가격을 알아내기
+[2020-09-16 22:08:24,407] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,408] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '대성파인텍', '스크린번호': '3000'}
+[2020-09-16 22:08:24,408] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 104040 종목의 가격을 알아내기
+[2020-09-16 22:08:24,408] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,409] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '한일진공', '스크린번호': '3000'}
+[2020-09-16 22:08:24,409] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 123840 종목의 가격을 알아내기
+[2020-09-16 22:08:24,409] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,410] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '맥스로텍', '스크린번호': '3000'}
+[2020-09-16 22:08:24,410] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 141070 종목의 가격을 알아내기
+[2020-09-16 22:08:24,411] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,412] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '텔콘RF제약', '스크린번호': '3000'}
+[2020-09-16 22:08:24,412] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 200230 종목의 가격을 알아내기
+[2020-09-16 22:08:24,412] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,413] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '에스티팜', '스크린번호': '3000'}
+[2020-09-16 22:08:24,413] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 237690 종목의 가격을 알아내기
+[2020-09-16 22:08:24,414] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,415] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '덴티스', '스크린번호': '3000'}
+[2020-09-16 22:08:24,415] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 261200 종목의 가격을 알아내기
+[2020-09-16 22:08:24,415] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:08:24,430] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 005110;007110;012280;025980;058400;065450;082800;214270;261200;, 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 22:08:24,430] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ ['005110', '007110', '012280', '025980', '058400', '065450', '082800', '214270', '261200']
+[2020-09-16 22:08:24,430] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 22:08:24,430] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 22:08:24,430] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '국동', '보유수량': 20, '매입가': 4890, '수익률(%)': -9.89, '현재가': 4450, '매입금액': 97800, '매매가능수량': 20, '스크린번호': '3000'}
+[2020-09-16 22:08:24,430] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 0.07, '현재가': 9370, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '케이피엠테크', '보유수량': 437, '매입가': 2098, '수익률(%)': 22.36, '현재가': 2590, '매입금액': 916900, '매매가능수량': 437, '스크린번호': '3000'}
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 1.04, '현재가': 6640, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '지에스이', '보유수량': 600, '매입가': 1927, '수익률(%)': 0.75, '현재가': 1960, '매입금액': 1156650, '매매가능수량': 600, '스크린번호': '3000'}
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '넥스트BT', '보유수량': 306, '매입가': 2647, '수익률(%)': -7.78, '현재가': 2465, '매입금액': 810170, '매매가능수량': 306, '스크린번호': '3000'}
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 63, '매입가': 5374, '수익률(%)': -18.41, '현재가': 4430, '매입금액': 338580, '매매가능수량': 63, '스크린번호': '3000'}
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '디딤', '보유수량': 408, '매입가': 2043, '수익률(%)': -12.28, '현재가': 1810, '매입금액': 833710, '매매가능수량': 408, '스크린번호': '3000'}
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '네오셈', '보유수량': 121, '매입가': 4205, '수익률(%)': -12.17, '현재가': 3730, '매입금액': 508915, '매매가능수량': 121, '스크린번호': '3000'}
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '한화시스템', '보유수량': 33, '매입가': 14050, '수익률(%)': -11.56, '현재가': 12550, '매입금액': 463650, '매매가능수량': 33, '스크린번호': '3000'}
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 22:08:24,431] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > ['005110', '007110', '012280', '025980', '058400', '065450', '082800', '214270', '261200']
+[2020-09-16 22:32:57,572] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 22:33:02,629] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 22:33:02,629] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 22:33:03,242] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 22:33:03,243] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 22:33:03,243] I kiwoom.py | Kiwoom-trdata_slot-0215 I DEBUG    > 예수금 : 1846802
+[2020-09-16 22:33:03,345] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 22:33:03,346] I kiwoom.py | Kiwoom-trdata_slot-0202 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 22:33:03,346] I kiwoom.py | Kiwoom-trdata_slot-0230 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000005614905 - -00000000137528 - -00000002.45
+[2020-09-16 22:33:03,346] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 005320 - 종목명: 국동                                     - 보유수량: 000000000000020 - 매입가:000000000004890 - 수익률: -00000009.89 - 현재가: 000000004450
+[2020-09-16 22:33:03,346] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: 000000000.07 - 현재가: 000000009370
+[2020-09-16 22:33:03,347] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 042040 - 종목명: 케이피엠테크                             - 보유수량: 000000000000437 - 매입가:000000000002098 - 수익률: 000000022.36 - 현재가: 000000002590
+[2020-09-16 22:33:03,347] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: 000000001.04 - 현재가: 000000006640
+[2020-09-16 22:33:03,347] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 053050 - 종목명: 지에스이                                 - 보유수량: 000000000000600 - 매입가:000000000001927 - 수익률: 000000000.75 - 현재가: 000000001960
+[2020-09-16 22:33:03,347] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 065170 - 종목명: 넥스트BT                                 - 보유수량: 000000000000306 - 매입가:000000000002647 - 수익률: -00000007.78 - 현재가: 000000002465
+[2020-09-16 22:33:03,347] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000063 - 매입가:000000000005374 - 수익률: -00000018.41 - 현재가: 000000004430
+[2020-09-16 22:33:03,348] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 217620 - 종목명: 디딤                                     - 보유수량: 000000000000408 - 매입가:000000000002043 - 수익률: -00000012.28 - 현재가: 000000001810
+[2020-09-16 22:33:03,348] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 253590 - 종목명: 네오셈                                   - 보유수량: 000000000000121 - 매입가:000000000004205 - 수익률: -00000012.17 - 현재가: 000000003730
+[2020-09-16 22:33:03,348] I kiwoom.py | Kiwoom-trdata_slot-0247 I DEBUG    > 종목코드: 272210 - 종목명: 한화시스템                               - 보유수량: 000000000000033 - 매입가:000000000014050 - 수익률: -00000011.56 - 현재가: 000000012550
+[2020-09-16 22:33:03,348] I kiwoom.py | Kiwoom-trdata_slot-0271 I DEBUG    > sPreNext : 
+[2020-09-16 22:33:03,508] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 22:33:03,509] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;002^이평선겹치고상향;
+[2020-09-16 22:33:03,510] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 22:33:03,510] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:33:03,510] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 22:33:03,511] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:33:03,511] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 2, 이름: 이평선겹치고상향
+[2020-09-16 22:33:03,511] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:33:03,567] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 000540;008470;009460;038110;050860;053050;053300;060480;104040;123840;141070;200230;237690;261200;, 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ ['000540', '008470', '009460', '038110', '050860', '053050', '053300', '060480', '104040', '123840', '141070', '200230', '237690', '261200']
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '국동', '보유수량': 20, '매입가': 4890, '수익률(%)': -9.89, '현재가': 4450, '매입금액': 97800, '매매가능수량': 20, '스크린번호': '3000'}
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 0.07, '현재가': 9370, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '케이피엠테크', '보유수량': 437, '매입가': 2098, '수익률(%)': 22.36, '현재가': 2590, '매입금액': 916900, '매매가능수량': 437, '스크린번호': '3000'}
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 1.04, '현재가': 6640, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '지에스이', '보유수량': 600, '매입가': 1927, '수익률(%)': 0.75, '현재가': 1960, '매입금액': 1156650, '매매가능수량': 600, '스크린번호': '3000'}
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '넥스트BT', '보유수량': 306, '매입가': 2647, '수익률(%)': -7.78, '현재가': 2465, '매입금액': 810170, '매매가능수량': 306, '스크린번호': '3000'}
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 63, '매입가': 5374, '수익률(%)': -18.41, '현재가': 4430, '매입금액': 338580, '매매가능수량': 63, '스크린번호': '3000'}
+[2020-09-16 22:33:03,568] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '디딤', '보유수량': 408, '매입가': 2043, '수익률(%)': -12.28, '현재가': 1810, '매입금액': 833710, '매매가능수량': 408, '스크린번호': '3000'}
+[2020-09-16 22:33:03,569] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '네오셈', '보유수량': 121, '매입가': 4205, '수익률(%)': -12.17, '현재가': 3730, '매입금액': 508915, '매매가능수량': 121, '스크린번호': '3000'}
+[2020-09-16 22:33:03,569] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '한화시스템', '보유수량': 33, '매입가': 14050, '수익률(%)': -11.56, '현재가': 12550, '매입금액': 463650, '매매가능수량': 33, '스크린번호': '3000'}
+[2020-09-16 22:33:03,569] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 22:33:03,569] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > ['000540', '008470', '009460', '038110', '050860', '053050', '053300', '060480', '104040', '123840', '141070', '200230', '237690', '261200']
+[2020-09-16 22:33:03,569] I kiwoom.py | Kiwoom-decide_buy_or_not-0309 I DEBUG    > 구매 요청 하기 전에 돈이 남아있는지 확인됨..
+[2020-09-16 22:33:03,569] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '흥국화재', '스크린번호': '3000'}
+[2020-09-16 22:33:03,569] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 000540 종목의 가격을 알아내기
+[2020-09-16 22:33:03,583] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,585] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '부스타', '스크린번호': '3000'}
+[2020-09-16 22:33:03,585] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 008470 종목의 가격을 알아내기
+[2020-09-16 22:33:03,585] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,586] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '한창제지', '스크린번호': '3000'}
+[2020-09-16 22:33:03,586] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 009460 종목의 가격을 알아내기
+[2020-09-16 22:33:03,586] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,588] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '에코플라스틱', '스크린번호': '3000'}
+[2020-09-16 22:33:03,588] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 038110 종목의 가격을 알아내기
+[2020-09-16 22:33:03,588] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,589] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '아세아텍', '스크린번호': '3000'}
+[2020-09-16 22:33:03,589] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 050860 종목의 가격을 알아내기
+[2020-09-16 22:33:03,589] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,590] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '지에스이', '스크린번호': '3000'}
+[2020-09-16 22:33:03,590] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 053050 종목의 가격을 알아내기
+[2020-09-16 22:33:03,591] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '한국정보인증', '스크린번호': '3000'}
+[2020-09-16 22:33:03,591] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 053300 종목의 가격을 알아내기
+[2020-09-16 22:33:03,591] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,592] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '국일신동', '스크린번호': '3000'}
+[2020-09-16 22:33:03,592] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 060480 종목의 가격을 알아내기
+[2020-09-16 22:33:03,592] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '대성파인텍', '스크린번호': '3000'}
+[2020-09-16 22:33:03,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 104040 종목의 가격을 알아내기
+[2020-09-16 22:33:03,594] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,595] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '한일진공', '스크린번호': '3000'}
+[2020-09-16 22:33:03,595] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 123840 종목의 가격을 알아내기
+[2020-09-16 22:33:03,595] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,596] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '맥스로텍', '스크린번호': '3000'}
+[2020-09-16 22:33:03,596] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 141070 종목의 가격을 알아내기
+[2020-09-16 22:33:03,596] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,598] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '텔콘RF제약', '스크린번호': '3000'}
+[2020-09-16 22:33:03,598] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 200230 종목의 가격을 알아내기
+[2020-09-16 22:33:03,598] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,599] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '에스티팜', '스크린번호': '3000'}
+[2020-09-16 22:33:03,599] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 237690 종목의 가격을 알아내기
+[2020-09-16 22:33:03,599] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,601] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 	{'종목명': '덴티스', '스크린번호': '3000'}
+[2020-09-16 22:33:03,601] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 261200 종목의 가격을 알아내기
+[2020-09-16 22:33:03,601] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:33:03,615] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 005110;007110;012280;025980;058400;065450;082800;214270;261200;, 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 22:33:03,615] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ ['005110', '007110', '012280', '025980', '058400', '065450', '082800', '214270', '261200']
+[2020-09-16 22:33:03,615] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '국동', '보유수량': 20, '매입가': 4890, '수익률(%)': -9.89, '현재가': 4450, '매입금액': 97800, '매매가능수량': 20, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 0.07, '현재가': 9370, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '케이피엠테크', '보유수량': 437, '매입가': 2098, '수익률(%)': 22.36, '현재가': 2590, '매입금액': 916900, '매매가능수량': 437, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 1.04, '현재가': 6640, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '지에스이', '보유수량': 600, '매입가': 1927, '수익률(%)': 0.75, '현재가': 1960, '매입금액': 1156650, '매매가능수량': 600, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '넥스트BT', '보유수량': 306, '매입가': 2647, '수익률(%)': -7.78, '현재가': 2465, '매입금액': 810170, '매매가능수량': 306, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 63, '매입가': 5374, '수익률(%)': -18.41, '현재가': 4430, '매입금액': 338580, '매매가능수량': 63, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '디딤', '보유수량': 408, '매입가': 2043, '수익률(%)': -12.28, '현재가': 1810, '매입금액': 833710, '매매가능수량': 408, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '네오셈', '보유수량': 121, '매입가': 4205, '수익률(%)': -12.17, '현재가': 3730, '매입금액': 508915, '매매가능수량': 121, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '한화시스템', '보유수량': 33, '매입가': 14050, '수익률(%)': -11.56, '현재가': 12550, '매입금액': 463650, '매매가능수량': 33, '스크린번호': '3000'}
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 22:33:03,616] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > ['005110', '007110', '012280', '025980', '058400', '065450', '082800', '214270', '261200']
+[2020-09-16 22:33:03,631] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 002780;006920;009460;012280;033250;090710;154030;214270;, 조건식 이름: 이평선겹치고상향, 조건식 인덱스: 2, 연속조회: 0
+[2020-09-16 22:33:03,631] I kiwoom.py | Kiwoom-condition_tr_slot-0189 I DEBUG    > 코드 종목 
+ ['002780', '006920', '009460', '012280', '033250', '090710', '154030', '214270']
+[2020-09-16 22:33:03,631] I kiwoom.py | Kiwoom-decide_buy_or_not-0289 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 22:33:03,631] I kiwoom.py | Kiwoom-decide_buy_or_not-0290 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 22:33:03,631] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '국동', '보유수량': 20, '매입가': 4890, '수익률(%)': -9.89, '현재가': 4450, '매입금액': 97800, '매매가능수량': 20, '스크린번호': '3000'}
+[2020-09-16 22:33:03,631] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 0.07, '현재가': 9370, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 22:33:03,631] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '케이피엠테크', '보유수량': 437, '매입가': 2098, '수익률(%)': 22.36, '현재가': 2590, '매입금액': 916900, '매매가능수량': 437, '스크린번호': '3000'}
+[2020-09-16 22:33:03,632] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 1.04, '현재가': 6640, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 22:33:03,632] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '지에스이', '보유수량': 600, '매입가': 1927, '수익률(%)': 0.75, '현재가': 1960, '매입금액': 1156650, '매매가능수량': 600, '스크린번호': '3000'}
+[2020-09-16 22:33:03,632] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '넥스트BT', '보유수량': 306, '매입가': 2647, '수익률(%)': -7.78, '현재가': 2465, '매입금액': 810170, '매매가능수량': 306, '스크린번호': '3000'}
+[2020-09-16 22:33:03,632] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 63, '매입가': 5374, '수익률(%)': -18.41, '현재가': 4430, '매입금액': 338580, '매매가능수량': 63, '스크린번호': '3000'}
+[2020-09-16 22:33:03,632] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '디딤', '보유수량': 408, '매입가': 2043, '수익률(%)': -12.28, '현재가': 1810, '매입금액': 833710, '매매가능수량': 408, '스크린번호': '3000'}
+[2020-09-16 22:33:03,632] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '네오셈', '보유수량': 121, '매입가': 4205, '수익률(%)': -12.17, '현재가': 3730, '매입금액': 508915, '매매가능수량': 121, '스크린번호': '3000'}
+[2020-09-16 22:33:03,632] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > {'종목명': '한화시스템', '보유수량': 33, '매입가': 14050, '수익률(%)': -11.56, '현재가': 12550, '매입금액': 463650, '매매가능수량': 33, '스크린번호': '3000'}
+[2020-09-16 22:33:03,632] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 22:33:03,632] I kiwoom.py | Kiwoom-decide_buy_or_not-0295 I DEBUG    > ['002780', '006920', '009460', '012280', '033250', '090710', '154030', '214270']
+[2020-09-16 22:44:27,754] I kiwoom.py | Kiwoom-__init__-0017 I DEBUG    > Kiwoom() class start.
+[2020-09-16 22:44:32,455] I kiwoom.py | Kiwoom-login_slot-0109 I DEBUG    > 정상처리
+[2020-09-16 22:44:32,456] I kiwoom.py | Kiwoom-get_account_info-0137 I DEBUG    > 계좌번호 : 8144669711
+[2020-09-16 22:44:33,093] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 예수금상세현황요청, tr코드: opw00001 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 22:44:33,094] I kiwoom.py | Kiwoom-trdata_slot-0204 I DEBUG    > sRQName: 예수금상세현황요청, sTrCode: opw00001
+[2020-09-16 22:44:33,095] I kiwoom.py | Kiwoom-trdata_slot-0217 I DEBUG    > 예수금 : 1846802
+[2020-09-16 22:44:33,199] I kiwoom.py | Kiwoom-msg_slot-0119 I DEBUG    > 스크린: 2000, 요청이름: 계좌평가잔고내역요청, tr코드: opw00018 --- [00Z310] 모의투자 조회가 완료되었습니다
+[2020-09-16 22:44:33,200] I kiwoom.py | Kiwoom-trdata_slot-0204 I DEBUG    > sRQName: 계좌평가잔고내역요청, sTrCode: opw00018
+[2020-09-16 22:44:33,200] I kiwoom.py | Kiwoom-trdata_slot-0232 I DEBUG    > 계좌평가잔고내역요청 싱글데이터 : 000000005614905 - -00000000137528 - -00000002.45
+[2020-09-16 22:44:33,201] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 005320 - 종목명: 국동                                     - 보유수량: 000000000000020 - 매입가:000000000004890 - 수익률: -00000009.89 - 현재가: 000000004450
+[2020-09-16 22:44:33,201] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 025980 - 종목명: 아난티                                   - 보유수량: 000000000000026 - 매입가:000000000009275 - 수익률: 000000000.07 - 현재가: 000000009370
+[2020-09-16 22:44:33,201] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 042040 - 종목명: 케이피엠테크                             - 보유수량: 000000000000437 - 매입가:000000000002098 - 수익률: 000000022.36 - 현재가: 000000002590
+[2020-09-16 22:44:33,202] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 045390 - 종목명: 대아티아이                               - 보유수량: 000000000000038 - 매입가:000000000006510 - 수익률: 000000001.04 - 현재가: 000000006640
+[2020-09-16 22:44:33,202] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 053050 - 종목명: 지에스이                                 - 보유수량: 000000000000600 - 매입가:000000000001927 - 수익률: 000000000.75 - 현재가: 000000001960
+[2020-09-16 22:44:33,203] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 065170 - 종목명: 넥스트BT                                 - 보유수량: 000000000000306 - 매입가:000000000002647 - 수익률: -00000007.78 - 현재가: 000000002465
+[2020-09-16 22:44:33,203] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 074610 - 종목명: 이엔플러스                               - 보유수량: 000000000000063 - 매입가:000000000005374 - 수익률: -00000018.41 - 현재가: 000000004430
+[2020-09-16 22:44:33,203] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 217620 - 종목명: 디딤                                     - 보유수량: 000000000000408 - 매입가:000000000002043 - 수익률: -00000012.28 - 현재가: 000000001810
+[2020-09-16 22:44:33,204] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 253590 - 종목명: 네오셈                                   - 보유수량: 000000000000121 - 매입가:000000000004205 - 수익률: -00000012.17 - 현재가: 000000003730
+[2020-09-16 22:44:33,204] I kiwoom.py | Kiwoom-trdata_slot-0249 I DEBUG    > 종목코드: 272210 - 종목명: 한화시스템                               - 보유수량: 000000000000033 - 매입가:000000000014050 - 수익률: -00000011.56 - 현재가: 000000012550
+[2020-09-16 22:44:33,204] I kiwoom.py | Kiwoom-trdata_slot-0273 I DEBUG    > sPreNext : 
+[2020-09-16 22:44:33,356] I kiwoom.py | Kiwoom-condition_slot-0161 I DEBUG    > 호출 성공 여부 1, 호출결과 메시지 [OK] 사용자 조건검색식 읽기
+[2020-09-16 22:44:33,358] I kiwoom.py | Kiwoom-condition_slot-0164 I DEBUG    > HTS의 조건검색식 이름 가져오기 000^단타1;001^이동평균선;002^이평선겹치고상향;
+[2020-09-16 22:44:33,358] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 0, 이름: 단타1
+[2020-09-16 22:44:33,359] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:44:33,359] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 1, 이름: 이동평균선
+[2020-09-16 22:44:33,360] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:44:33,360] I kiwoom.py | Kiwoom-condition_slot-0173 I DEBUG    > 조건식 분리 번호: 2, 이름: 이평선겹치고상향
+[2020-09-16 22:44:33,361] I kiwoom.py | Kiwoom-condition_slot-0176 I DEBUG    > 조회 성공여부 1 
+[2020-09-16 22:44:33,417] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 000540;008470;009460;038110;050860;053050;053300;060480;104040;123840;141070;200230;237690;261200;, 조건식 이름: 단타1, 조건식 인덱스: 0, 연속조회: 0
+[2020-09-16 22:44:33,433] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 005110;007110;012280;025980;058400;065450;082800;214270;261200;, 조건식 이름: 이동평균선, 조건식 인덱스: 1, 연속조회: 0
+[2020-09-16 22:44:33,448] I kiwoom.py | Kiwoom-condition_tr_slot-0186 I DEBUG    > 화면번호: 0156, 종목코드 리스트: 002780;006920;009460;012280;033250;090710;154030;214270;, 조건식 이름: 이평선겹치고상향, 조건식 인덱스: 2, 연속조회: 0
+[2020-09-16 22:44:33,449] I kiwoom.py | Kiwoom-condition_tr_slot-0190 I DEBUG    > 코드 종목 
+ ['002780', '006920', '009460', '012280', '033250', '090710', '154030', '214270']
+[2020-09-16 22:44:33,449] I kiwoom.py | Kiwoom-decide_buy_or_not-0291 I DEBUG    > 조건검색 식 검색된 list 전달받기
+[2020-09-16 22:44:33,449] I kiwoom.py | Kiwoom-decide_buy_or_not-0292 I DEBUG    > 조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목
+[2020-09-16 22:44:33,450] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '국동', '보유수량': 20, '매입가': 4890, '수익률(%)': -9.89, '현재가': 4450, '매입금액': 97800, '매매가능수량': 20, '스크린번호': '3000'}
+[2020-09-16 22:44:33,450] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '아난티', '보유수량': 26, '매입가': 9275, '수익률(%)': 0.07, '현재가': 9370, '매입금액': 241150, '매매가능수량': 26, '스크린번호': '3000'}
+[2020-09-16 22:44:33,450] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '케이피엠테크', '보유수량': 437, '매입가': 2098, '수익률(%)': 22.36, '현재가': 2590, '매입금액': 916900, '매매가능수량': 437, '스크린번호': '3000'}
+[2020-09-16 22:44:33,451] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '대아티아이', '보유수량': 38, '매입가': 6510, '수익률(%)': 1.04, '현재가': 6640, '매입금액': 247380, '매매가능수량': 38, '스크린번호': '3000'}
+[2020-09-16 22:44:33,451] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '지에스이', '보유수량': 600, '매입가': 1927, '수익률(%)': 0.75, '현재가': 1960, '매입금액': 1156650, '매매가능수량': 600, '스크린번호': '3000'}
+[2020-09-16 22:44:33,451] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '넥스트BT', '보유수량': 306, '매입가': 2647, '수익률(%)': -7.78, '현재가': 2465, '매입금액': 810170, '매매가능수량': 306, '스크린번호': '3000'}
+[2020-09-16 22:44:33,452] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '이엔플러스', '보유수량': 63, '매입가': 5374, '수익률(%)': -18.41, '현재가': 4430, '매입금액': 338580, '매매가능수량': 63, '스크린번호': '3000'}
+[2020-09-16 22:44:33,452] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '디딤', '보유수량': 408, '매입가': 2043, '수익률(%)': -12.28, '현재가': 1810, '매입금액': 833710, '매매가능수량': 408, '스크린번호': '3000'}
+[2020-09-16 22:44:33,452] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '네오셈', '보유수량': 121, '매입가': 4205, '수익률(%)': -12.17, '현재가': 3730, '매입금액': 508915, '매매가능수량': 121, '스크린번호': '3000'}
+[2020-09-16 22:44:33,452] I kiwoom.py | Kiwoom-decide_buy_or_not-0294 I DEBUG    > {'종목명': '한화시스템', '보유수량': 33, '매입가': 14050, '수익률(%)': -11.56, '현재가': 12550, '매입금액': 463650, '매매가능수량': 33, '스크린번호': '3000'}
+[2020-09-16 22:44:33,453] I kiwoom.py | Kiwoom-decide_buy_or_not-0296 I DEBUG    > 검색된 종목들을 리스트에 업데이트
+[2020-09-16 22:44:33,453] I kiwoom.py | Kiwoom-decide_buy_or_not-0297 I DEBUG    > ['002780', '006920', '009460', '012280', '033250', '090710', '154030', '214270']
+[2020-09-16 22:44:33,453] I kiwoom.py | Kiwoom-decide_buy_or_not-0311 I DEBUG    > 구매 요청 하기 전에 돈이 남아있는지 확인됨..
+[2020-09-16 22:44:33,454] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 	{'종목명': '진흥기업', '스크린번호': '3000'}
+[2020-09-16 22:44:33,454] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 002780 종목의 가격을 알아내기
+[2020-09-16 22:44:33,455] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:44:33,458] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 	{'종목명': '모헨즈', '스크린번호': '3000'}
+[2020-09-16 22:44:33,458] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 006920 종목의 가격을 알아내기
+[2020-09-16 22:44:33,458] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:44:33,460] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 	{'종목명': '한창제지', '스크린번호': '3000'}
+[2020-09-16 22:44:33,460] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 009460 종목의 가격을 알아내기
+[2020-09-16 22:44:33,460] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:44:33,462] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 	{'종목명': '영화금속', '스크린번호': '3000'}
+[2020-09-16 22:44:33,462] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 012280 종목의 가격을 알아내기
+[2020-09-16 22:44:33,462] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:44:33,464] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 	{'종목명': '체시스', '스크린번호': '3000'}
+[2020-09-16 22:44:33,465] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 033250 종목의 가격을 알아내기
+[2020-09-16 22:44:33,465] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:44:33,467] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 	{'종목명': '휴림로봇', '스크린번호': '3000'}
+[2020-09-16 22:44:33,467] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 090710 종목의 가격을 알아내기
+[2020-09-16 22:44:33,468] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:44:33,470] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 	{'종목명': '아시아종묘', '스크린번호': '3000'}
+[2020-09-16 22:44:33,470] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 154030 종목의 가격을 알아내기
+[2020-09-16 22:44:33,470] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
+[2020-09-16 22:44:33,474] I kiwoom.py | Kiwoom-decide_buy_or_not-0313 I DEBUG    > 	{'종목명': '퓨쳐스트림네트웍스', '스크린번호': '3000'}
+[2020-09-16 22:44:33,474] I kiwoom.py | Kiwoom-decide_buy_or_not-0315 I DEBUG    > 214270 종목의 가격을 알아내기
+[2020-09-16 22:44:33,475] I kiwoom.py | Kiwoom-decide_buy_or_not-0317 I DEBUG    > 실시간 데이터 등록하기 요청 보내기..
