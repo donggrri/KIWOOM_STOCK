@@ -211,8 +211,8 @@ class Kiwoom(QAxWidget):
         elif strType == "D":
             self.logging.logger.debug("종목코드: %s, 종목이탈: %s" % (strCode, strType))
             stock_name = self.dynamicCall("GetMasterCodeName(QString)", strCode)
-            if stock_name in self.slack_msg_condition_stock:
-                self.slack_msg_condition_stock.pop(stock_name)
+            #if stock_name in self.slack_msg_condition_stock:
+                #self.slack_msg_condition_stock.pop(stock_name)
 
 
 
