@@ -200,6 +200,10 @@ class Kiwoom(QAxWidget):
         if strType == "I":
             self.logging.logger.debug("종목코드: %s, 종목편입: %s" % (strCode, strType))
             stock_name = self.dynamicCall("GetMasterCodeName(QString)", strCode)
+            ####종목이 편입되면 , SetRealReg를 통해서 실시간 등록을 해준다.
+            screen_num = self.screen_to_buy
+            fids = self.realType.REALTYPE['주식체결']['체결시간']
+            self.dynamicCall("SetRealReg(QString, QString, QString, QString)", screen_num, strCode, fids, "1")
             if stock_name not in self.slack_msg_condition_stock :
                 self.slack_msg_condition_stock.append(stock_name)
                 self.slack.notification(
@@ -225,7 +229,7 @@ class Kiwoom(QAxWidget):
 
             use_money = float(self.deposit) * self.use_money_percent
             self.use_money = int(use_money)
-            self.use_money = self.use_money / 4
+            #self.use_money = self.use_money / 4
 
             output_deposit = self.dynamicCall("GetCommData(QString, QString, int, QString)", sTrCode, sRQName, 0, "출금가능금액")
             self.output_deposit = int(output_deposit)
@@ -305,7 +309,7 @@ class Kiwoom(QAxWidget):
 
     def decide_buy_or_not(self,condition_list=None):
         self.logging.logger.debug("조건검색 식 검색된 list 전달받기")
-        self.logging.logger.debug("조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목")
+        self.logging.logger.debug("조건검색 식 검색된 list 종목들 구매 하기전에 내가 이미 가지고 있는 종목 실시간함수에 추가하기")
         for code in self.account_stock_dict :
             self.logging.logger.debug(self.account_stock_dict[code])
 
