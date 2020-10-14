@@ -38,10 +38,12 @@ class Kiwoom(QAxWidget):
         self.total_profit_loss_money = 0 #총평가손익금액
         self.total_profit_loss_rate = 0.0 #총수익률(%)
         self.condition_list_count = 5 # 조건검색 된 종목 숫자
+        self.buy_checking_code_dict = {} # setrealreg 할 때 기본값을 FALSE로, 매수주문을 한 다음에는 TRUE로 변경
         ########################################
 
         ######## 종목 정보 가져오기
         self.jango_dict = {}
+
         ########################
 
         ########### 종목 분석 용
@@ -212,6 +214,7 @@ class Kiwoom(QAxWidget):
                     fallback="주식 자동화 프로그램 조건검색",
                     text="종목코드 [%s] 종목명 [%s] 가 포착되었습니다. \n" % (strCode,stock_name)
                 )
+            self.buy_checking_code_dict.update({strCode:False}) # False인 경우에만 구매하기 위해서 추가하는 사전임
         elif strType == "D":
             self.logging.logger.debug("종목코드: %s, 종목이탈: %s" % (strCode, strType))
             stock_name = self.dynamicCall("GetMasterCodeName(QString)", strCode)
@@ -428,7 +431,7 @@ class Kiwoom(QAxWidget):
                         ["신규매도", self.screen_to_buy, self.account_num, 2, sCode, asd['매매가능수량'], 0, self.realType.SENDTYPE['거래구분']['시장가'], ""]
                     )
 
-                    if order_success == 0:
+                    if order_success == 0 :
                         self.logging.logger.debug("매도주문 전달 성공")
                         self.slack.notification(
                             pretext="주식자동화 프로그램 동작",
@@ -436,6 +439,7 @@ class Kiwoom(QAxWidget):
                             fallback="주식 자동화 프로그램 조건검색",
                             text="%s 종목을 '매도' 주문하였습니다.\n \t 체결시간 =\t [%s]" % (sCode,a)
                         )
+
                         del self.account_stock_dict[sCode]
                     else:
                         self.logging.logger.debug("매도주문 전달 실패")
@@ -478,15 +482,20 @@ class Kiwoom(QAxWidget):
                          e, self.realType.SENDTYPE['거래구분']['지정가'], ""]
                     )
 
-                    if order_success == 0:
+                    if order_success == 0 and self.buy_checking_code_dict[sCode] is False:
                         self.logging.logger.debug("매수주문 전달 성공")
                         self.slack.notification(
-                            pretext="주식자동화 프로그램 동작",
-                            title="주식 자동화 프로그램 동작",
-                            fallback="주식 자동화 프로그램 조건검색",
+                            pretext="조건식 검색 종목 매수",
+                            title="매수주문 전달 성공",
                             text="%s 종목을 매수 주문 하였습니다.\n \t 체결시간 =\t [%s]" % (sCode,a)
                         )
-
+                        self.buy_checking_code_dict.update({sCode:True}) # 더이상 해당 종목이 중복주문 되지 않도록 수정.
+                        if self.buy_checking_code_dict[sCode] is True:
+                            self.slack.notification(
+                                pretext="조건식 검색 종목 매수",
+                                title="매수주문 완료",
+                                text="%s 종목 중복 매수 주문 방지.\n \t 체결시간 =\t [%s]" % (sCode, a)
+                            )
                     else:
                         self.logging.logger.debug("매수주문 전달 실패")
 
