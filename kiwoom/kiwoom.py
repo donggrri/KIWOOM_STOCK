@@ -191,7 +191,7 @@ class Kiwoom(QAxWidget):
         self.logging.logger.debug("화면번호: %s, 종목코드 리스트: %s, 조건식 이름: %s, 조건식 인덱스: %s, 연속조회: %s" % (sScrNo, strCodeList, strConditionName, index, nNext))
 
         code_list = strCodeList.split(";")[:-1]
-        if index == 1 :
+        if index == 6 :
             self.logging.logger.debug("검색된 종목----------------------- \n %s" % code_list)
             self.decide_buy_or_not(code_list)
 
@@ -214,7 +214,9 @@ class Kiwoom(QAxWidget):
                     fallback="주식 자동화 프로그램 조건검색",
                     text="종목코드 [%s] 종목명 [%s] 가 포착되었습니다. \n" % (strCode,stock_name)
                 )
-            self.buy_checking_code_dict.update({strCode:False}) # False인 경우에만 구매하기 위해서 추가하는 사전임
+            self.buy_checking_code_dict.update({strCode:{}}) # 'buy_flag' 가 False인 경우에만 구매하기 위해서 추가하는 사전임
+            self.buy_checking_code_dict[strCode].update({'buy_flag': False})
+            self.buy_checking_code_dict[strCode].update({'buy_cnt': 0})
         elif strType == "D":
             self.logging.logger.debug("종목코드: %s, 종목이탈: %s" % (strCode, strType))
             stock_name = self.dynamicCall("GetMasterCodeName(QString)", strCode)
@@ -327,9 +329,8 @@ class Kiwoom(QAxWidget):
                 self.condition_search_dict[code].update({'종목명': stock_name})
                 self.condition_search_dict[code].update({'스크린번호' : self.screen_to_buy})
 
-        if self.use_money >= 100000 :
-            #10만원 이상 예수금 있는 경우에는 구매 진행
-            self.use_money *= 0.1 # 예수금의 최대 10%만
+        if self.use_money >= 300000 :
+            #30만원 이상 예수금 있는 경우에는 구매 진행
 
             self.logging.logger.debug("구매 요청 하기 전에 돈이 남아있는지 확인됨..")
             for code in self.condition_search_dict:
@@ -424,7 +425,7 @@ class Kiwoom(QAxWidget):
                 asd = self.account_stock_dict[sCode]
                 meme_rate = (b - asd['매입가']) / asd['매입가'] * 100
 
-                if asd['매매가능수량'] > 0 and (meme_rate > 5 or meme_rate < -4):
+                if asd['매매가능수량'] > 0 and (meme_rate > 5 or meme_rate < -5):
 
                     order_success = self.dynamicCall(
                         "SendOrder(QString, QString, QString, int, QString, int, int, QString, QString)",
@@ -471,33 +472,34 @@ class Kiwoom(QAxWidget):
             elif d >= 0.0 and sCode not in self.jango_dict: 
                 try:
                     self.logging.logger.debug("매수조건 통과 %s " % sCode)
-                    result = (self.use_money * 0.25 ) / f
+                    result = 300000 / f
                     quantity = int(result)
                     #self.logging.logger.debug("quantity type is \t" + str(type(quantity)))
                     #self.logging.logger.debug("quantity is \t" + str(quantity))
+                    if self.buy_checking_code_dict[sCode]['buy_flag'] is True:
+                        self.logging.logger.debug("%s 는 이미 매수한 종목입니다." %sCode)
 
-                    order_success = self.dynamicCall(
-                        "SendOrder(QString, QString, QString, int, QString, int, int, QString, QString)",
-                        ["신규매수", self.screen_to_buy , self.account_num, 1, sCode, quantity,
-                         e, self.realType.SENDTYPE['거래구분']['지정가'], ""]
-                    )
-
-                    if order_success == 0 and self.buy_checking_code_dict[sCode] is False:
-                        self.logging.logger.debug("매수주문 전달 성공")
-                        self.slack.notification(
-                            pretext="조건식 검색 종목 매수",
-                            title="매수주문 전달 성공",
-                            text="%s 종목을 매수 주문 하였습니다.\n \t 체결시간 =\t [%s]" % (sCode,a)
+                    else :
+                        order_success = self.dynamicCall(
+                            "SendOrder(QString, QString, QString, int, QString, int, int, QString, QString)",
+                            ["신규매수", self.screen_to_buy , self.account_num, 1, sCode, quantity,
+                             e, self.realType.SENDTYPE['거래구분']['지정가'], ""]
                         )
-                        self.buy_checking_code_dict.update({sCode:True}) # 더이상 해당 종목이 중복주문 되지 않도록 수정.
-                        if self.buy_checking_code_dict[sCode] is True:
+
+                        if order_success == 0 and self.buy_checking_code_dict[sCode]['buy_flag'] is False:
+                            self.logging.logger.debug("매수주문 전달 성공")
+                            #self.buy_checking_code_dict.update({})
+                            self.use_money = self.use_money - 300000
+                            #
                             self.slack.notification(
                                 pretext="조건식 검색 종목 매수",
                                 title="매수주문 완료",
                                 text="%s 종목 중복 매수 주문 방지.\n \t 체결시간 =\t [%s]" % (sCode, a)
                             )
-                    else:
-                        self.logging.logger.debug("매수주문 전달 실패")
+                            self.buy_checking_code_dict[sCode].update({'buy_flag':True}) # 더이상 해당 종목이 중복주문 되지 않도록 수정.
+
+                        else:
+                            self.logging.logger.debug("매수주문 전달 실패")
 
                 except ZeroDivisionError:
                     self.logging.logger.debug("ZeroDivision")
