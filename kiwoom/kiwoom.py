@@ -38,6 +38,7 @@ class Kiwoom(QAxWidget):
         self.total_profit_loss_money = 0 #총평가손익금액
         self.total_profit_loss_rate = 0.0 #총수익률(%)
         self.condition_list_count = 5 # 조건검색 된 종목 숫자
+        self.jango_money = 0 # 실시간 - sRealType "잔고" 예수금을 저장할 변수
         self.buy_checking_code_dict = {} # setrealreg 할 때 기본값을 FALSE로, 매수주문을 한 다음에는 TRUE로 변경
         ########################################
 
@@ -81,6 +82,8 @@ class Kiwoom(QAxWidget):
 
         # 실시간 수신 관련 함수
         self.dynamicCall("SetRealReg(QString, QString, QString, QString)", self.screen_start_stop_real, '', self.realType.REALTYPE['장시작시간']['장운영구분'], "0")
+        ###실시간잔고 받아오는 함수
+        self.dynamicCall("SetRealReg(QString, QString, QString, QString)", self.screen_start_stop_real, '', self.realType.REALTYPE['잔고']['예수금'], "0")
 
         for code in self.account_stock_dict.keys():
             screen_num = self.account_stock_dict[code]['스크린번호']
@@ -371,6 +374,9 @@ class Kiwoom(QAxWidget):
 
                 sys.exit()
 
+        elif sRealType == "잔고":
+            self.jango_money = self.dynamicCall("GetCommRealData(QString, int)", sCode, self.realType.REALTYPE[sRealType]['예수금'])
+
         elif sRealType == "주식체결":
 
             a = self.dynamicCall("GetCommRealData(QString, int)", sCode, self.realType.REALTYPE[sRealType]['체결시간'])  # 출력 HHMMSS
@@ -424,7 +430,7 @@ class Kiwoom(QAxWidget):
             if sCode in self.account_stock_dict.keys() and sCode not in self.jango_dict.keys():
                 asd = self.account_stock_dict[sCode]
                 meme_rate = (b - asd['매입가']) / asd['매입가'] * 100
-
+                '''
                 if asd['매매가능수량'] > 0 and (meme_rate > 5 or meme_rate < -5):
 
                     order_success = self.dynamicCall(
@@ -444,7 +450,9 @@ class Kiwoom(QAxWidget):
                         del self.account_stock_dict[sCode]
                     else:
                         self.logging.logger.debug("매도주문 전달 실패")
+                
 
+            
             elif sCode in self.jango_dict.keys():
                 jd = self.jango_dict[sCode]
                 meme_rate = (b - jd['매입단가']) / jd['매입단가'] * 100
@@ -467,17 +475,22 @@ class Kiwoom(QAxWidget):
 
                     else:
                         self.logging.logger.debug("매도주문 전달 실패")
+            '''
 
-
-            elif d >= 0.0 and sCode not in self.jango_dict: 
+            elif d >= 0.0 and sCode not in self.jango_dict:
                 try:
                     self.logging.logger.debug("매수조건 통과 %s " % sCode)
                     result = 300000 / f
                     quantity = int(result)
+
+                    current_jango_money = self.jango_dict
                     #self.logging.logger.debug("quantity type is \t" + str(type(quantity)))
                     #self.logging.logger.debug("quantity is \t" + str(quantity))
                     if self.buy_checking_code_dict[sCode]['buy_flag'] is True:
                         self.logging.logger.debug("%s 는 이미 매수한 종목입니다." %sCode)
+                    #잔고 30만원 이하인경우 아무것도 안함.
+                    elif current_jango_money < 300000 :
+                        pass
 
                     else :
                         order_success = self.dynamicCall(
