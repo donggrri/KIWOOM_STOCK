@@ -39,7 +39,7 @@ class Kiwoom(QAxWidget):
         self.total_profit_loss_rate = 0.0 #총수익률(%)
         self.condition_list_count = 5 # 조건검색 된 종목 숫자
         self.buy_checking_code_dict = {} # setrealreg 할 때 기본값을 FALSE로, 매수주문을 한 다음에는 TRUE로 변경
-        self.jango_money = 0
+
         ########################################
 
         ######## 종목 정보 가져오기
@@ -82,8 +82,6 @@ class Kiwoom(QAxWidget):
 
         # 실시간 수신 관련 함수
         self.dynamicCall("SetRealReg(QString, QString, QString, QString)", self.screen_start_stop_real, '', self.realType.REALTYPE['장시작시간']['장운영구분'], "0")
-
-        self.dynamicCall("SetRealReg(QString, QString, QString, QString)", self.screen_start_stop_real, '', self.realType.REALTYPE['잔고']['예수금'], "0")
 
         for code in self.account_stock_dict.keys():
             screen_num = self.account_stock_dict[code]['스크린번호']
@@ -177,11 +175,11 @@ class Kiwoom(QAxWidget):
             index = unit_condition.split("^")[0]
             index = int(index)
             condition_name = unit_condition.split("^")[1]
+            if index == 12 :
+                self.logging.logger.debug("조건식 분리 번호: %s, 이름: %s" % (index, condition_name))
 
-            self.logging.logger.debug("조건식 분리 번호: %s, 이름: %s" % (index, condition_name))
-
-            ok  = self.dynamicCall("SendCondition(QString, QString, int, int)", "0156", condition_name, index, 1) #조회요청 + 실시간 조회
-            self.logging.logger.debug("조회 성공여부 %s " % ok)
+                ok  = self.dynamicCall("SendCondition(QString, QString, int, int)", "0156", condition_name, index, 1) #조회요청 + 실시간 조회
+                self.logging.logger.debug("조회 성공여부 %s " % ok)
 
 
 
@@ -194,7 +192,7 @@ class Kiwoom(QAxWidget):
         self.logging.logger.debug("화면번호: %s, 종목코드 리스트: %s, 조건식 이름: %s, 조건식 인덱스: %s, 연속조회: %s" % (sScrNo, strCodeList, strConditionName, index, nNext))
 
         code_list = strCodeList.split(";")[:-1]
-        if index == 6 :
+        if index == 12 :
             self.logging.logger.debug("검색된 종목----------------------- \n %s" % code_list)
             self.decide_buy_or_not(code_list)
 
@@ -407,6 +405,9 @@ class Kiwoom(QAxWidget):
             k = self.dynamicCall("GetCommRealData(QString, int)", sCode, self.realType.REALTYPE[sRealType]['저가'])  # 출력 : +(-)2530
             k = abs(int(k))
 
+            l = self.dynamicCall("GetCommRealData(QString, int)", sCode,self.realType.REALTYPE[sRealType]['잔고'])
+            self.deposit = int(l)
+
             if sCode not in self.condition_search_dict:
                 self.condition_search_dict.update({sCode:{}})
 
@@ -477,13 +478,14 @@ class Kiwoom(QAxWidget):
                     self.logging.logger.debug("매수조건 통과 %s " % sCode)
                     result = 300000 / f
                     quantity = int(result)
-                    current_jango_money = self.jango_money
+                    current_jango_money = int(self.deposit)
                     #self.logging.logger.debug("quantity type is \t" + str(type(quantity)))
                     #self.logging.logger.debug("quantity is \t" + str(quantity))
                     if self.buy_checking_code_dict[sCode]['buy_flag'] is True:
                         self.logging.logger.debug("%s 는 이미 매수한 종목입니다." %sCode)
 
                     elif current_jango_money < 300000:
+                        self.logging.logger.debug("모의투자 계좌의 예수금 잔고 : %s" %current_jango_money)
                         self.logging.logger.debug("모의투자 계좌의 예수금 잔고가 30만원 이하 입니다.")
                         pass
 
@@ -535,8 +537,8 @@ class Kiwoom(QAxWidget):
                 elif not_quantity == 0:
                     del self.not_account_stock_dict[order_num]
 
-        elif sRealType == "잔고":
-            self.jango_money = self.dynamicCall("GetCommRealData(QString, int)", sCode, self.realType.REALTYPE[sRealType]['예수금'])
+
+
 
     # 실시간 체결 정보
     def chejan_slot(self, sGubun, nItemCnt, sFidList):
@@ -566,6 +568,7 @@ class Kiwoom(QAxWidget):
             chegual_time_str = self.dynamicCall("GetChejanData(int)", self.realType.REALTYPE['주문체결']['주문/체결시간'])  # 출력: '151028'
 
             chegual_price = self.dynamicCall("GetChejanData(int)", self.realType.REALTYPE['주문체결']['체결가'])  # 출력: 2110  default : ''
+
             if chegual_price == '':
                 chegual_price = 0
             else:
