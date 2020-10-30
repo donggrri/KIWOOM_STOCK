@@ -405,9 +405,6 @@ class Kiwoom(QAxWidget):
             k = self.dynamicCall("GetCommRealData(QString, int)", sCode, self.realType.REALTYPE[sRealType]['저가'])  # 출력 : +(-)2530
             k = abs(int(k))
 
-            l = self.dynamicCall("GetCommRealData(QString, int)", sCode,self.realType.REALTYPE[sRealType]['잔고'])
-            self.deposit = int(l)
-
             if sCode not in self.condition_search_dict:
                 self.condition_search_dict.update({sCode:{}})
 
@@ -641,6 +638,9 @@ class Kiwoom(QAxWidget):
             first_buy_price = self.dynamicCall("GetChejanData(int)", self.realType.REALTYPE['잔고']['(최우선)매수호가'])
             first_buy_price = abs(int(first_buy_price))
 
+            ###주문체결 후 잔고에 대한 정보가 업데이트 된다.
+            l = self.dynamicCall("GetCommRealData(QString, int)", sCode,self.realType.REALTYPE['잔고']['예수금'])
+            self.deposit = int(l)
             if sCode not in self.jango_dict.keys():
                 self.jango_dict.update({sCode:{}})
 
